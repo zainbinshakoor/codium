@@ -4,13 +4,15 @@
   "author": "Zain <zainshakoor.dev@gmail.com>",
   "license": "MIT",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "build": "babel src -d dist"
-
-  },
+  "main": "dist/index.js", 
+  "types": "dist/index.d.ts",
+"scripts": {
+  "dev": "vite",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "build": "tsc && babel src -d dist"
+}
+,
   "dependencies": {
     "@testing-library/react": "^16.0.1",
     "react": "^18.3.1",
