@@ -14,9 +14,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      name: 'CodeumUI',
+      name: 'codeum-ui',
       formats: ['es', 'cjs'],
-      fileName: (format) => `codeum-ui.${format}.js`,
+      fileName: (format) => `codeum-ui.${format === 'es' ? 'esm' : 'cjs'}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
