@@ -5,9 +5,8 @@ const App = () => (
   <ThemeProvider theme={theme}>
     <GlobalStyles />
     <div style={{ padding: '20px' }}>
-      <Button variant="primary">Click Me</Button>
-      <Input value='' type='text' placeholder='This' onChange={(e)=>console.log(e.target.value)
-      }/>
+      <Button variant="secondary">Click Me</Button>
+      <Input type='text' placeholder="Enter your name" />
     </div>
   </ThemeProvider>
 );

@@ -5,8 +5,8 @@ import { StyledInput, InputWrapper, ErrorMessage, IconWrapper } from './Input.st
 interface InputProps {
   type: string;
   placeholder: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   error?: string;
   disabled?: boolean;
   icon?: React.ReactNode;
